@@ -35,8 +35,10 @@ public class EnemyTest {
 
     @Test
     public void canTakeDamage() {
-        assertEquals(80, enemy1.takeDamage(weapon1);
-        assertEquals(65, enemy2.takeDamage(weapon2);
+        enemy1.takeDamage(weapon1);
+        enemy2.takeDamage(weapon2);
+        assertEquals(80, enemy1.getHealthPoints());
+        assertEquals(65, enemy2.getHealthPoints());
 
     }
 
